@@ -1,0 +1,128 @@
+@font-face {
+  font-family: AntonSC;
+  src: url(./fonts/FiraSans-Black.ttf);
+}
+:root {
+  --head-color: #be1c1c;
+  --bg-color: white;
+  --text-color: black;
+  --btn-color: #0554f2;
+  --hover-color: #e8f6ff;
+  --border-radius: 10px;
+  --title-color: #4594fa;
+}
+
+[data-theme="dark"] {
+  --text-color: white;
+  --bg-color: black;
+  /* --text-color: #ffba08; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: end;
+}
+.logo .logo-text {
+  height: 25px;
+  margin-bottom: 2px;
+}
+.logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.App {
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+  overflow: hidden;
+}
+
+.get-start {
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  padding: 12px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+  border: 2px solid white;
+}
+.get-start:hover {
+  background: transparent;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+}
+h1 {
+  font-family: AntonSC, sans-serif;
+  font-size: clamp(50px, 4vw, 100px);
+  padding-bottom: 30px;
+  text-shadow: 0 5px 5px gray;
+}
+h2 {
+  font-family: AntonSC, sans-serif;
+  font-size: 35px;
+  padding: 30px 0;
+}
+.logo {
+  font-family: AntonSC, sans-serif;
+  color: var(--btn-color);
+  font-size: clamp(12px, 4vw, 20px);
+  letter-spacing: 4px;
+}
+.view-btn {
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+  font-family: sans-serif;
+  padding: 12px 18px;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+}
+
+.view-btn:hover {
+  background-color: var(--btn-color);
+  color: white;
+}
+
+.title {
+  background-color: var(--hover-color);
+  color: var(--btn-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 840px) {
+  .container {
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0 20px;
+  }
+}
